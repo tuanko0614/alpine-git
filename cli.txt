@@ -1,0 +1,55 @@
+ctrl+P+Q
+#Check Images 
+- docker images
+#pull image 
+- docker pull :latest version
+#xoa image
+- docker image rm + ID
+#chay 1 container
+- docker run -it + id image
+#check containers dang chay
+- docker ps 
+#check toan bo cac container
+- docker ps -a
+#start 1 container
+- docker start + id 
+#stop 1 container
+- docker stop + id
+#vao container
+- docker attach +id
+#run va dat ten cho images
+- sudo docker run -it --name "C1" -h cent1 centos:latest
+#xoa 1 container
+- docker rm -f +id
+#docker save
+- docker save --output myimage.tar
+#import file image
+- docker load <tên file.tar>
+#đặt tên cho image
+- docker tag <id> newimage:version2
+#chia se du lieu từ máy host vào container
+- docker run -it -v /home/tuandt0614/dulieu:/home/dulieu 1e2297e8aa5d
+#check o dia docker
+- docker volume ls
+#tao o dia
+- docker volume create D1
+#kiem tra o dia
+- docker volume inspect D1
+#xoa 1 o dia
+- docker volume rm <name>
+# gán ổ đĩa volume vào container
+- docker run -it --name C1 --mount source=D2, target=/home/disk2 ubuntu:latest
+#network docker (busybox)
+#check co bao nhieu network
+- docker network ls
+- docker network inspect bridge
+#clean ur docker
+- docker rm -f $(docker ps -a -q)
+#Display the docker host information
+- docker info 
+
+
+
+
+
+
