@@ -1,5 +1,4 @@
-$cat Dockerfile 
-FROM alpine:3.5
+FROM alpine:3.9.3
 LABEL maintainer="Collabnix"
 
-ENTRYPOINT echo "Hi, your ENTRYPOINT instruction in Shell Form !"
+WORKDIR /opt
