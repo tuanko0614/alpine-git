@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.5
+LABEL maintainer="Collabnix"
 
-RUN apk update
-CMD ["top"]
+ENTRYPOINT ["/bin/echo", "Hi, your ENTRYPOINT instruction in Exec Form !"]
